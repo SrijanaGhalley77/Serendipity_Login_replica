@@ -1,1 +1,1 @@
-# Serendipity_Login_copy
+# Serendipity Login page replica
