@@ -1,41 +1,89 @@
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+    width: 1440px;
+    height: 1024px;
     display: flex;
     /*align-items: center;*/
+}
+body{
 
-    background: url(/pictures/Header.png) center top no-repeat, url(/pictures/Footer.png) center bottom no-repeat;
-    background-size:  contain, contain;
+    background: url(/pictures/Header.png) center top no-repeat ,
+                url(/pictures/Footer.png) center bottom no-repeat;
+    background-size:  1416px 217px, contain;
+
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
+/*Image style*/
 .pic {
+    width: 665px;
     display: flex;
+    padding-left: 4px;
+    margin-bottom: 5px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px;
+    gap: 10px;
     margin-left: 92px;
 }
-.title{
-    width: 410.961px;
-height: 27.539px;
-flex-shrink: 0;
+.logo{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 450px;
+    align-items: center;
+}
+.l1{
+    max-width: 100%;
+   display: block;
+   height: 28px;
+
+}
+.y{
+    height: 32px;
+    padding: 0;
+    margin-left: 2px;
 }
 .textImg {
-    max-width: 100%;
-    height: auto;
+    width: 207px;
+    height: 13px;
 }
 
+/*Text styling*/
+.text{
+    gap: 16px;
+}
+.h1{
+    color: var(--Serendipity-Montessori-Main, #56369D);
+    font-family: Montserrat;
+    width: 665px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 145.455% */
+}
+.h2{
+    color: var(--Text-Colour-Black-High-Emphasis, rgba(0, 0, 0, 0.87));
+    width: 600px;
+    /* SM/Title/Medium */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+    text-align: justify;
+}
+
+/*Form Style*/
 .form {
     display: flex;
     width: 452px;
+    height: auto;
     padding: 32px 24px;
     margin-right: 72px ;
     flex-direction: column;
