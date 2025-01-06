@@ -1,1 +1,0 @@
-# Serendipity Login page replica
