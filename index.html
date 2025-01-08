@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>User Management Page</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <!--Font Awesome url-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -11,49 +11,141 @@
 </head>
 <body>
     <div class="container">
-
-
-        <div class="pic">
+        <div class="nav">
             <div class="logo">
-                <div class="l1">
-                    <img src="/pictures/seren.png" alt="text" class="">
-                    <img src="/pictures/y.png" alt="text" class="y">
-                </div>
-            
-                <img src="/pictures/t1.svg" alt="text" class="textImg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="38" viewBox="0 0 30 38" fill="none">
+                    <path d="M12.1502 38V24.9414L13.4315 28.7129L0 5H6.14139L16.9219 24.0929H13.4757L24.3446 5H30L16.5685 28.7129L17.894 24.9414V38H12.1502Z" fill="white"/>
+                    <path d="M20 5C20 7.76142 17.7614 10 15 10C12.2386 10 10 7.76142 10 5C10 2.23858 12.2386 0 15 0C17.7614 0 20 2.23858 20 5Z" fill="white"/>
+                </svg>
             </div>
-            <div class="text">
-                <p class="h1">Our mission is to inspire children to learn and explore</p>
-                <p class="h2">We empower each child to acquire the essential knowledge, thinking skills, and strength of character, fundamental to flourish as joyous children and future successful adults.</p>
-
+            <div class="icons">
+                <a href="#">
+                    <i class="fa-solid fa-user-gear"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-user-tie"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-school"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-address-book"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-calendar"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-folder"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-file-lines"></i>
+                </a>
             </div>
-            
             
         </div>
 
-        <div class="form">
-            <form>
-                <p class="formHeader">Sign in to your account</p> <br>
-                <div class="inputBox">
-                    <input class="textBox" type="text" placeholder="Enter your email"> <br>
-                    <input class="textBox" type="password"> <br>
-
-                    <div class="oneLine">
-                        <div class="wrapper">
-                            <input type="checkbox" id="check">
-                            <label for="check">Remember Me</label>
+        <div class="main">
+            <div class="header">
+                <div class="head_tDiv">
+                    <p class="header_title">User Access Management</p>
+                </div>
+                <div class="user_Info">
+                    <div class="user">
+                        <a href="#" class="user_dp"></a>
+                        <div class="user_credintials">
+                            <a href="#" class="user_name">Hannah McCulloch</a>
+                            <a href="#" class="user_designation">Admin</a>
                         </div>
-                        
-                        <a class="a1" href="forgot.html">Forgot password?</a>
+                        <div class="dropdown">
+                            <button>
+                                <i class="fa-solid fa-caret-down fa-xl"></i>
+                            </button>
+                            <div class="drop_content">
+                                <a href="#">Edit</a>
+                                <a href="#">Deactivate</a>
+                                <a href="#">Archive</a>
+                                <a href="#">Delete</a>
+                            </div>
+                        </div>
                     </div>
-                    
+                    <div type="button" class="notification">
+                        <div class="notification_badge">2</div>
+                        <i class="fa-regular fa-bell fa-xl "></i>
+                    </div>
                 </div>
-                
-                 <br>
-                <button class="btn">Sign In</button> <br>
-                <a class="a2" href="#">Don't have an acount?</a>
-            </form>
+            </div>
+
+            <div class="content">
+
+                <div class="content_header">
+                    <div class="head">
+                        <p class="head1">User Access Management</p>
+                        <p class="head2">You can easily manage roles and and permissions from this section</p>
+                    </div>
+                </div>
+
+                <div class="content_body">
+                    <div class="row1">
+                        <div class="block">
+                            <div class="block_Head">
+                                <p class="subHead">Administrator</p>
+                                <p class="counter">02 Admins</p>
+                            </div>
+                            <p class="description">An Administrator provides office and administrative support to either a team or individual. This role is vital for the smooth-running of a business. </p>
+                            
+                            <div class="avatar">
+                                <img src="/pictures/a1.jpeg" alt="Admin 1" class="a1">
+                                <img src="/pictures/a2.jpeg" alt="Admin 2" class="a2">
+                            </div>
+                            
+                        </div>
+                        <div class="block">
+                            <div class="block_Head">
+                                <p class="subHead">Teachers</p>
+                                <p class="counter">14 Teachers</p>
+                            </div>
+                            <p class="description">Regular system users can only access the assets they have permission for. A user role defines permissions for users to perform a group of tasks. </p>
+                            
+                            <div class="avatar">
+                                <img src="/pictures/a1.jpeg" alt="Admin 1" class="a1">
+                                <img src="/pictures/a2.jpeg" alt="Admin 2" class="a2">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="block">
+                            <div class="block_Head">
+                                <p class="subHead">Parents</p>
+                                <p class="counter">02 Parents</p>
+                            </div>
+                            <p class="description">An Administrator provides office and administrative support to either a team or individual. This role is vital for the smooth-running of a business. </p>
+                        
+                            <div class="avatar">
+                                <img src="/pictures/a1.jpeg" alt="Admin 1" class="a1">
+                                <img src="/pictures/a2.jpeg" alt="Admin 2" class="a2">
+                            </div>
+    
+                        </div>
+                        <div class="block">
+                            <div class="block_Head">
+                                <p class="subHead">Authorized Pickups</p>
+                                <p class="counter">14 Members</p>
+                            </div>
+                            <p class="description">Regular system users can only access the assets they have permission for. A user role defines permissions for users to perform a group of tasks. </p>
+                        
+                            <div class="avatar">
+                                <img src="/pictures/a1.jpeg" alt="Admin 1" class="a1">
+                                <img src="/pictures/a2.jpeg" alt="Admin 2" class="a2">
+                            </div>
+    
+                        </div>
+                    </div>
+                       
+                </div>
+            </div>
         </div>
+        
     </div>
 </body>
 </html>
