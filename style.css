@@ -680,6 +680,11 @@ table {
     border-spacing: 1px;
     border: 1px solid #fff;
 }
+th:nth-child(1), td:nth-child(1) { width: 339px; }
+th:nth-child(2), td:nth-child(2) { width: 292px; }
+th:nth-child(3), td:nth-child(3) { width: 284px; }
+th:nth-child(4), td:nth-child(4) { width: 111px; }
+th:nth-child(5), td:nth-child(5) { width: 71px; }
 
 thead {
     width: 100%;
@@ -741,6 +746,105 @@ td input[type="checkbox"]{
     width: 20px;
     height: 20px;
 }
+/*----Room Content Styling-----*/
+.room{
+    display: flex;
+    width: 295px;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+.room .room_avatar{
+    display: flex;
+    width: 20px;
+    padding: 5px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    background: #E3F5E5;
+}
+.room .room_avatar .avatar_text{
+    color: #458C47;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+    letter-spacing: 0.1px;
+}
+
+.room .room_info{
+    display: flex;
+    width: 216px;
+    padding-right: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+.room .room_info .room_nameNno{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.room .room_info .room_nameNno .room_name{
+    color: var(--Neutral-Black-Light, #201F1E);
+
+    /* SM/Title/Small */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.1px;
+}
+.room .room_info .room_nameNno .room_user{
+    display: flex;
+    padding: 4px 2px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    border-radius: 100px;
+    background: var(--Bg-Blue-Light, #F5F6FA);
+}
+.room .room_info .room_nameNno .room_user .room_userNo{
+    color: var(--Neutral-Black-Light, #201F1E);
+
+    /* SM/Title/Small */
+    font-family: Montserrat;
+    font-size: 13.05px;
+    line-height: 8.648px;
+}
+.room .room_info .room_email{
+    color: var(--Text-Colour-Black-Medium-Emphasis, rgba(0, 0, 0, 0.60));
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 145.455% */
+    letter-spacing: 0.5px;
+}
+.room .room_exchange{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 1.333px 2.667px 2.667px 1.333px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.room .room_exchange .fa-arrow-right-arrow-left{
+    color: #0000008A;
+}
+
+/*----Room Content Styling ends-----*/
 .admin_dp{
     width: 40px;
     height: 40px;
@@ -770,7 +874,7 @@ td input[type="checkbox"]{
     letter-spacing: 0.1px;
 }
 
-/*----Checkbox Styling----*/
+/*----Checkbox Styling For Status----*/
 .status{
     display: flex;
     align-items: center;
@@ -825,10 +929,10 @@ td input[type="checkbox"]{
 
 .status label{
     color: var(--Neutral-Black-Light, #201F1E);
-    
+
     /* SM/Title/Small */
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
