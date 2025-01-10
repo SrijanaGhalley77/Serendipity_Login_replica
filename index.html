@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management Page</title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+      <!--Montserrat Font url-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--Font Awesome url-->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -46,7 +51,13 @@
 
         <div class="main">
             <div class="header">
-                <div class="head_tDiv">
+                <div class="head_rightDiv">
+                    
+                    <div class="backBtn">
+                        <button class="back_btn">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                    </div>
                     <p class="header_title">User Access Management</p>
                 </div>
                 <div class="user_Info">
@@ -73,8 +84,6 @@
                         <i class="fa-regular fa-bell fa-xl "></i>
                     </div>
                 </div>
-
-                
 
             </div>
 
@@ -177,10 +186,10 @@
                                                 <span class="admin_email">gmail@gmail.com</span>
                                             </td>
                                             <td class="status">
-                                                <div class="tick_icon">
-                                                    <i class="fa-regular fa-circle-check"></i>
+                                                <div class="status">
+                                                    <input type="checkbox" id="admin_status">
+                                                    <label for="admin_status">Signed Up</label>
                                                 </div>
-                                                <span class="admin_status">Signed Up</span>
                                             </td>
                                             <td class="admin_action">
                                                 <button class="action_icon">
@@ -197,11 +206,12 @@
                                             <td>
                                                 <span class="admin_email">gmail@gmail.com</span>
                                             </td>
-                                            <td class="status">
-                                                <div class="tick_icon">
-                                                    <i class="fa-regular fa-circle-check"></i>
+                                            <td>
+                                                <div class="status">
+                                                    <input type="checkbox" id="admin_status">
+                                                    <label for="admin_status">Signed Up</label>
                                                 </div>
-                                                <span class="admin_status">Signed Up</span>
+                                            
                                             </td>
                                             <td class="admin_action">
                                                 <button class="action_icon">
