@@ -736,7 +736,7 @@ td{
     align-items: center;
     gap: 12px;
 }
-td .name{
+td .parents_name{
     display: flex;
     align-items: center;
     gap: 12px;
@@ -747,50 +747,27 @@ td input[type="checkbox"]{
     height: 20px;
 }
 /*----Room Content Styling-----*/
-.room{
+.parents{
     display: flex;
-    width: 295px;
     align-items: center;
     gap: 12px;
     flex-shrink: 0;
 }
-.room .room_avatar{
-    display: flex;
-    width: 20px;
-    padding: 5px 8px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    border-radius: 100%;
-    background: #E3F5E5;
-}
-.room .room_avatar .avatar_text{
-    color: #458C47;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px; /* 157.143% */
-    letter-spacing: 0.1px;
+.parents .parents_avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: url(/pictures/a2.jpeg) lightgray -9.313px -3.577px / 155.63% 233.445% no-repeat;
 }
 
-.room .room_info{
+.parents .parents_info{
     display: flex;
     width: 216px;
     padding-right: 8px;
     flex-direction: column;
     align-items: flex-start;
-    flex-shrink: 0;
 }
-.room .room_info .room_nameNno{
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.room .room_info .room_nameNno .room_name{
+.parents .parents_info .parents_name{
     color: var(--Neutral-Black-Light, #201F1E);
 
     /* SM/Title/Small */
@@ -801,24 +778,7 @@ td input[type="checkbox"]{
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.1px;
 }
-.room .room_info .room_nameNno .room_user{
-    display: flex;
-    padding: 4px 2px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-    border-radius: 100px;
-    background: var(--Bg-Blue-Light, #F5F6FA);
-}
-.room .room_info .room_nameNno .room_user .room_userNo{
-    color: var(--Neutral-Black-Light, #201F1E);
-
-    /* SM/Title/Small */
-    font-family: Montserrat;
-    font-size: 13.05px;
-    line-height: 8.648px;
-}
-.room .room_info .room_email{
+.parents .parents_info .parents_email{
     color: var(--Text-Colour-Black-Medium-Emphasis, rgba(0, 0, 0, 0.60));
     font-family: Montserrat;
     font-size: 11px;
@@ -827,33 +787,12 @@ td input[type="checkbox"]{
     line-height: 16px; /* 145.455% */
     letter-spacing: 0.5px;
 }
-.room .room_exchange{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    display: flex;
-    width: 20px;
-    height: 20px;
-    padding: 1.333px 2.667px 2.667px 1.333px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    cursor: pointer;
-}
-.room .room_exchange .fa-arrow-right-arrow-left{
-    color: #0000008A;
-}
 
-/*----Room Content Styling ends-----*/
-.admin_dp{
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    background: url(/pictures/user1.png) lightgray 50% / cover no-repeat;
-}
- .admin_name{
+
+/*----Phone number-----*/
+.parents_number{
     color: var(--Neutral-Black-Light, #201F1E);
-    text-decoration: none;
+
     /* SM/Title/Small */
     font-family: Montserrat;
     font-size: 14px;
@@ -862,7 +801,8 @@ td input[type="checkbox"]{
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.1px;
 }
-.admin_email{
+/*----Work Place-----*/
+.parent_workplace{
     color: var(--Neutral-Black-Light, #201F1E);
 
     /* SM/Title/Small */
@@ -874,71 +814,48 @@ td input[type="checkbox"]{
     letter-spacing: 0.1px;
 }
 
-/*----Checkbox Styling For Status----*/
-.status{
+/*----Children styling----*/
+
+.children{
     display: flex;
     align-items: center;
     gap: 12px;
-
 }
-.status input[type="checkbox"]{
-    appearance: none;
-    -webkit-appearance: none;
-    height: 24px;
+.children_avatar{
     width: 24px;
-    padding: 4px;
-    gap: 10px;
+    height: 24px;
+    border-radius: 24px;
+    background: url(/pictures/a1.jpeg) lightgray -2.47px -1.524px / 122.875% 118.679% no-repeat;
+}
+.children_info{
+    display: flex;
+    width: 216px;
+    padding-right: 8px;
+    flex-direction: column;
     align-items: flex-start;
-    border-radius: 1000px;
-    background-color: #E3F5E5;
-    cursor: pointer;
-    display: flex;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #E3F5E5;
-    align-items: center;
-    justify-content: center;
 }
-
-.status input[type="checkbox"]:after {
-    display: flex;
-    width: 16px;
-    height: 16px;
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Font Awesome 6 Free";
-    content: "\f00c";
-    font-weight: 900;
-    font-size: 16px;
-    color: #61CD70; /* Colour of Tick*/
-    display: none;
-}
-
-.status input[type="checkbox"]:hover {
-    background-color: #E3F5E5;
-}
-.status input[type="checkbox"]:checked {
-    background-color: #E3F5E5;
-}
-
-.status input[type="checkbox"]:checked:after {
-    display: block;
-}
-
-
-.status label{
+.children_name{
     color: var(--Neutral-Black-Light, #201F1E);
 
     /* SM/Title/Small */
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.1px;
 }
-/*---Checkbox styling ends---*/
+
+.children_age_grp{
+    color: var(--Text-Colour-Black-Medium-Emphasis, rgba(0, 0, 0, 0.60));
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 145.455% */
+    letter-spacing: 0.5px;
+}
+/*---children styling ends---*/
 
 .admin_action{
     display: flex;
