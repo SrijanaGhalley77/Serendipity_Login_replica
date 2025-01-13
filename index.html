@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents</title>
+
+      <!--Montserrat Font url-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Font Awesome url-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="38" viewBox="0 0 30 38" fill="none">
+                    <path d="M12.1502 38V24.9414L13.4315 28.7129L0 5H6.14139L16.9219 24.0929H13.4757L24.3446 5H30L16.5685 28.7129L17.894 24.9414V38H12.1502Z" fill="white"/>
+                    <path d="M20 5C20 7.76142 17.7614 10 15 10C12.2386 10 10 7.76142 10 5C10 2.23858 12.2386 0 15 0C17.7614 0 20 2.23858 20 5Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="icons">
+                <a href="#">
+                    <i class="fa-solid fa-user-gear"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-user-tie"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-school"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-address-book"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-calendar"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-folder"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-file-lines"></i>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <div class="head_rightDiv">
+                    
+                    <div class="backBtn">
+                        <button class="back_btn">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                    </div>
+                    <p class="header_title">User Access Management</p>
+                </div>
+                <div class="user_Info">
+                    <div class="user">
+                        <a href="#" class="user_dp"></a>
+                        <div class="user_credintials">
+                            <a href="#" class="user_name">Hannah McCulloch</a>
+                            <a href="#" class="user_designation">Admin</a>
+                        </div>
+                        <div class="dropdown">
+                            <button>
+                                <i class="fa-solid fa-caret-down fa-xl"></i>
+                            </button>
+                            <div class="drop_content">
+                                <div class="drop_component">
+                                    <div class="drop_icon">
+                                        <i class="fa-solid fa-file-pen"></i>
+                                    </div>
+                                    <a href="#" class="drop_text">Edit</a>
+                                </div>
+                                <div class="drop_component">
+                                    <div class="drop_icon">
+                                        <i class="fa-solid fa-toggle-on"></i>
+                                    </div>
+                                    <a href="#" class="drop_text">Deactivate</a>
+                                </div>
+                                <div class="drop_component">
+                                    <div class="drop_icon">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </div>
+                                    <a href="#" class="drop_text">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div type="button" class="notification">
+                        <div class="notification_badge">2</div>
+                        <i class="fa-regular fa-bell fa-xl "></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="content_header">
+                    <div class="head">
+                        <p class="head1">Parents</p>
+                        <p class="head2">All the parents’ information are listed in this section</p>
+                    </div>
+                </div>
+
+                <div class="content_body">
+
+                    <div class="bodyHead">
+                        <div class="tab1">
+                            <div class="group">
+                                <div class="icon">
+                                    <i class="fa-regular fa-id-card"></i>
+                                </div>
+                                <a href="#">UNDERLISTING</a>
+                            </div>
+                        </div>
+                        <div class="tab2">
+                            <div class="group">
+                                <div class="icon">
+                                    <i class="fa-solid fa-gear"></i>
+                                </div>
+                                <a href="#">QUICK ACTIONS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bodyMain">
+                        <div class="bodyMain_content">
+                            <div class="bodyMain_header">
+                                <div class="searchbar_outer">
+                                    <div class="searchbar">
+                                        <input type="text" placeholder="Search for Parents" name="search">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </div>
+                                    <div class="filter"><i class="fa-solid fa-filter"></i></div>
+                                </div>
+                                <div class="utility_btns">
+                                    <div class="utility_btn1">
+                                        <div class="uicon">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                        <a>ADD PARENTS</a>
+                                    </div>
+                                    <div class="utility_btn2">
+                                        <div class="uicon">
+                                            <i class="fa-solid fa-box-archive"></i>
+                                        </div>
+                                        <a>ARCHIVED</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body_table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <input type="checkbox">
+                                               <a href="#">PARENTS</a> 
+                                            </th>
+                                            <th>
+                                                <a href="#">
+                                                    PHONE NUMBER
+                                                </a>
+                                            </th>
+                                            <th>
+                                                <a href="#">
+                                                    WORK PLACE
+                                                </a>
+                                            </th>
+                                            <th>
+                                                <a href="">CHILDREN</a>
+                                            </th>
+                                            <th class="action_head"><a href="">Action</a></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="parents">
+                                                <input type="checkbox">
+                                                <div class="parents_avatar_contain">
+                                                    <img class="parents_avatar" src="/pictures/a2.jpeg" alt="Parent picture">
+                                                </div>
+                                                <div class="parents_info">
+                                                        <span class="parents_name">Rachel Harvey</span>
+                                                        
+                                                        <span class="parents_email">rachel.harvey@gmail.com</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="parents_number">+975 17453849</div>
+                                            </td>
+                                            <td>
+                                                <span class="parent_workplace">Hospital</span>
+                                            </td>
+                                            <td>
+                                                <div class="children">
+                                                    <div class="children_avatar_contain">
+                                                        <img class="children_avatar" src="/pictures/a1.jpeg" alt="Parent picture">
+                                                    </div>
+                                                    <div class="children_info">
+                                                            <span class="children_name">Calie Harvey</span>
+                                                            
+                                                            <span class="children_age_grp">Toddler | Redwood</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="admin_action">
+                                                <button class="action_icon">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="parents">
+                                                <input type="checkbox">
+                                                <div class="parents_avatar_contain">
+                                                    <img class="parents_avatar" src="/pictures/a2.jpeg" alt="Parent picture">
+                                                </div>
+                                                <div class="parents_info">
+                                                        <span class="parents_name">Rachel Harvey</span>
+                                                        
+                                                        <span class="parents_email">rachel.harvey@gmail.com</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="parents_number">+975 17453849</div>
+                                            </td>
+                                            <td>
+                                                <span class="parent_workplace">Hospital</span>
+                                            </td>
+                                            <td>
+                                                <div class="children">
+                                                    <div class="children_avatar_contain">
+                                                        <img class="children_avatar" src="/pictures/a1.jpeg" alt="Parent picture">
+                                                    </div>
+                                                    <div class="children_info">
+                                                            <span class="children_name">Calie Harvey</span>
+                                                            
+                                                            <span class="children_age_grp">Toddler | Redwood</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="admin_action">
+                                                <button class="action_icon">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                           
+                                    
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="footer">
+                                            <td colspan="5" class="footer_row">
+                                                <p class="pageno">1-3 of 3 Items</p>
+                                                <div class="page_icon">
+                                                    <div class="page_left">
+                                                        <i class="fa-solid fa-angle-left"></i>
+                                                    </div>
+                                                    <div class="page_right">
+                                                        <i class="fa-solid fa-angle-right"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
