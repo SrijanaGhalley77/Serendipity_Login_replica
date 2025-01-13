@@ -87,6 +87,7 @@ body {
     margin-top: 0;
     background: var(--SM-Background, #F6F8FB);*/
 }
+
 .header{
     display: flex;
     width: 1051px;
