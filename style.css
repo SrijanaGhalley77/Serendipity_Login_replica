@@ -658,7 +658,7 @@ letter-spacing: 0.1px;
     background: var(--Serendipity-Montessori-Main, #56369D);
 }
 
-.utility_btn1 .uicon{
+ .uicon{
     display: flex;
     width: 24px;
     height: 24px;
