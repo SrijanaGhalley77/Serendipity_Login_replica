@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Page</title>
+    <!--Font Awesome url-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Style url-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="38" viewBox="0 0 30 38" fill="none">
+                    <path d="M12.1502 38V24.9414L13.4315 28.7129L0 5H6.14139L16.9219 24.0929H13.4757L24.3446 5H30L16.5685 28.7129L17.894 24.9414V38H12.1502Z" fill="white"/>
+                    <path d="M20 5C20 7.76142 17.7614 10 15 10C12.2386 10 10 7.76142 10 5C10 2.23858 12.2386 0 15 0C17.7614 0 20 2.23858 20 5Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="icons">
+                <a href="#">
+                    <i class="fa-solid fa-user-gear fa-xl"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-user-tie fa-xl"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-school fa-xl"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-address-book fa-xl"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-calendar fa-xl"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-folder fa-xl"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-file-lines fa-xl"></i>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <div class="head_tDiv">
+                    <p class="header_title">User Access Management</p>
+                </div>
+                <div class="user_Info">
+                    <div class="user">
+                        <a href="#" class="user_dp"></a>
+                        <div class="user_credintials">
+                            <a href="#" class="user_name">Hannah McCulloch</a>
+                            <a href="#" class="user_designation">Admin</a>
+                        </div>
+                        <div class="dropdown">
+                            <button>
+                                <i class="fa-solid fa-caret-down fa-xl"></i>
+                            </button>
+                            <div class="drop_content">
+                                <div class="drop_component">
+                                    <div class="drop_icon">
+                                        <i class="fa-solid fa-file-pen"></i>
+                                    </div>
+                                    <a href="#" class="drop_text">Edit</a>
+                                </div>
+                                <div class="drop_component">
+                                    <div class="drop_icon">
+                                        <i class="fa-solid fa-toggle-on"></i>
+                                    </div>
+                                    <a href="#" class="drop_text">Deactivate</a>
+                                </div>
+                                <div class="drop_component">
+                                    <div class="drop_icon">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </div>
+                                    <a href="#" class="drop_text">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div type="button" class="notification">
+                        <div class="notification_badge">2</div>
+                        <i class="fa-regular fa-bell fa-xl "></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="content_header">
+                    <div class="head">
+                        <p class="head1">User Access Management</p>
+                        <p class="head2">You can easily manage roles and and permissions from this section</p>
+                    </div>
+                </div>
+
+                <div class="content_body">
+                    <div class="row1">
+                        <div class="block">
+                            <div class="block_Head">
+                                <p class="subHead">Administrator</p>
+                                <p class="counter">02 Admins</p>
+                            </div>
+                            <p class="description">An Administrator provides office and administrative support to either a team or individual. This role is vital for the smooth-running of a business. </p>
+                            
+                            <div class="avatar">
+                                <img src="/pictures/a1.jpeg" alt="Admin 1" class="a1">
+                                <img src="/pictures/a2.jpeg" alt="Admin 2" class="a2">
+                            </div>
+                            
+                        </div>
+                        <div class="block">
+                            <div class="block_Head">
+                                <p class="subHead">Teachers</p>
+                                <p class="counter">14 Teachers</p>
+                            </div>
+                            <p class="description">Regular system users can only access the assets they have permission for. A user role defines permissions for users to perform a group of tasks. </p>
+                            
+                            <div class="avatar">
+                                <img src="/pictures/a1.jpeg" alt="Admin 1" class="a1">
+                                <img src="/pictures/a2.jpeg" alt="Admin 2" class="a2">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="block">
+                            <div class="block_Head">
+                                <p class="subHead">Parents</p>
+                                <p class="counter">02 Parents</p>
+                            </div>
+                            <p class="description">An Administrator provides office and administrative support to either a team or individual. This role is vital for the smooth-running of a business. </p>
+                        
+                            <div class="avatar">
+                                <img src="/pictures/a1.jpeg" alt="Admin 1" class="a1">
+                                <img src="/pictures/a2.jpeg" alt="Admin 2" class="a2">
+                            </div>
+    
+                        </div>
+                        <div class="block">
+                            <div class="block_Head">
+                                <p class="subHead">Authorized Pickups</p>
+                                <p class="counter">14 Members</p>
+                            </div>
+                            <p class="description">Regular system users can only access the assets they have permission for. A user role defines permissions for users to perform a group of tasks. </p>
+                        
+                            <div class="avatar">
+                                <img src="/pictures/a1.jpeg" alt="Admin 1" class="a1">
+                                <img src="/pictures/a2.jpeg" alt="Admin 2" class="a2">
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
