@@ -1,0 +1,738 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background: url(/pictures/Header.png) center top repeat-x ,
+                url(/pictures/Footer.png) center bottom no-repeat;
+    background-size:  1416px 271px, 100% 127px;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 92px 0 72px;
+}
+
+/*Image style*/
+.pic {
+    width: 665px;
+    display: flex;
+    padding-left: 4px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 92px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 460px;
+    align-items: center;
+}
+.l1{
+    width: 100%;
+   display: inline-block;
+   height: 28px;
+
+}
+.y{
+    height: 32px;
+    padding: 0;
+    margin-left: 14px;
+}
+.textImg {
+    width: 207px;
+    height: 13px;
+}
+
+/*Text styling*/
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.h1{
+    color: var(--Serendipity-Montessori-Main, #56369D);
+    font-family: Montserrat;
+    width: 665px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 145.455% */
+}
+.h2{
+    color: var(--Text-Colour-Black-High-Emphasis, rgba(0, 0, 0, 0.87));
+    width: 600px;
+    /* SM/Title/Medium */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+    text-align: justify;
+}
+
+/*Form Style*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 404px;
+    min-height: 280px;
+    padding: 32px 24px;
+    gap: 0px;
+    margin-right: 72px ;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: -2px -2px 85px 0px rgba(87, 54, 157, 0.16), 2px 2px 88px 0px rgba(87, 54, 157, 0.02);
+}
+.formHeaderC{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.formHeader {
+    color: var(--Text-Colour-Black-High-Emphasis, rgba(0, 0, 0, 0.87));
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    align-self: center;
+}
+
+.inputBox {
+    display: flex;
+    min-width: 404px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.textBox {
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: 4px;
+    border: 1px solid var(--Serendipity-Montessori-Main, #56369D);
+    background: var(--Neutral-Surface-Main, #FFF);
+}
+
+/*Checkbox styling starts*/ 
+.oneLine {
+    display: flex;
+    min-width: 404px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper{
+    min-width: 150px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #56369D;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    color: var(--Text-Black-Medium-Emphasis, rgba(0, 0, 0, 0.60));
+    text-align: left;
+    
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    /* SM/Title/Small */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.1px;
+}
+
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 15px;
+    color: #56369D; /* Colour of Tick*/
+    display: none;
+}
+
+input[type="checkbox"]:hover {
+    background-color: #cbc0e3;
+}
+input[type="checkbox"]:checked {
+    background-color: #ded5f3;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+/*Checkbox styling ends*/
+
+.btn {
+    display: flex;
+    min-width: 404px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: #57369D;
+
+    color: #FFF;
+    /* SM/Title/Medium */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.btn:hover {
+    background-color: #662ee1;
+}
+
+.a1 {
+    text-decoration: none;
+    color: var(--Serendipity-Montessori-Main, #56369D);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.1px;
+}
+
+.a2 {
+    text-decoration: none;
+    min-width: 404px;
+    color: var(--Serendipity-Montessori-Main, #56369D);
+    text-align: center;
+
+    /* SM/Title/Small */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.1px;
+}
+.t1{
+    text-decoration: none;
+    color: var(--Text-Colour-Black-High-Emphasis, rgba(0, 0, 0, 0.87));
+    text-align: center;
+
+    /* SM/Title/Small */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.1px;
+}
+
+/*---Media Query Styling---*/
+/*2xl screen*/
+
+@media (max-width: 1440px){
+    body{
+        height: 100vh;
+        background: url(/pictures/Header.png) center top no-repeat ,
+                url(/pictures/Footer.png) center bottom no-repeat;
+        background-size:  1416px 217px, 100% 127px;
+        overflow: scroll;
+    }
+    .container{
+        width: 100vh;
+        max-width: 1280px;
+        gap: 100px;
+        justify-content: center;
+    }
+    form{
+        margin: 0;
+        gap: 0;
+    }
+}
+/*xl*/
+@media (max-width: 1280px){
+    body{
+
+        height: 100vh;
+        justify-content: center;
+        background: url(/pictures/Header.png) center top no-repeat ,
+                url(/pictures/Footer.png) center bottom no-repeat;
+        background-size:  1416px 217px, 100% 127px;
+    }
+    .container{
+        width: 100vh;
+        max-width: 1024px;
+        justify-content: center;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+
+    }
+    .pic{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        margin: 0;
+        padding: 0;
+    }
+    form{
+        margin: 0;
+        gap: 0;
+    }
+}
+/*lg*/
+@media (max-width: 1024px){
+    body{
+        height: 100vh;
+        justify-content: center;
+        background: url(/pictures/Header.png) center top no-repeat ,
+                url(/pictures/Footer.png) center bottom no-repeat;
+        background-size:  100% 217px, 100% 127px;
+    }
+    .container{
+        width: 100vh;
+        max-width: 768px;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+
+    }
+    /*Image style*/
+    .pic {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        align-items: center;
+        gap: 12px;
+    }
+    .y{
+        margin-left: 14px;
+    }
+    .text {
+        align-self: center;
+    }
+    .h1{
+        width: 100%;
+        align-self: center;
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .h2{
+        width: 100%;
+        font-size: 20px;
+        line-height: 26px; 
+    }
+
+    form {
+        min-width: 500px;
+        margin: 0;
+        gap: 0;
+    }
+    .formHeader{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .inputBox {
+        width: 100%;
+    }
+    .textBox{
+        padding: 14px 16px;
+    }
+    .wrapper{
+        width: 180px;
+    }
+    label{
+        font-size: 16px;
+    }
+    .oneLine{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .a1{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .a2{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+/*md*/
+@media (max-width: 768px){
+    body{
+        justify-content: center;
+        background: url(/pictures/Header.png) center top no-repeat ,
+        url(/pictures/Footer.png) center bottom no-repeat;
+        background-size:  1416px 217px, 1416px 127px;
+        overflow: hidden hidden;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 100vh;
+        height: 100vh;
+        max-width: 640px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+
+    }
+    /*Image style*/
+    .pic {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+    .logo{
+        gap: 7px;
+    }
+    .y{
+        height: 30px;
+        margin-left: 14px;
+    }
+    .container .text {
+        align-self: center;
+    }
+    .h1{
+        width: 100%;
+        align-self: center;
+        font-size: 22px;
+        line-height: 0;
+    }
+    .h2{
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px; 
+    }
+
+    form {
+        min-width: 500px;
+        margin: 0;
+        gap: 0;
+    }
+    .formHeaderC{
+        gap: 0;
+    }
+    .formHeader{
+        font-size: 24px;
+        line-height: 0;
+        gap: 0;
+    }
+    .inputBox {
+        width: 100%;
+    }
+    .textBox{
+        padding: 14px 16px;
+    }
+    .wrapper{
+        width: 180px;
+    }
+    label{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .oneLine{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .a1{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .a2{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .t1{
+        font-size: 16px;
+    }
+}
+/*sm*/
+@media (max-width: 640px){
+    body{
+        justify-content: center;
+        background: url(/pictures/Header.png) center top no-repeat ,
+        url(/pictures/Footer.png) center bottom no-repeat;
+        background-size:  1416px 217px, 1416px 127px;
+        overflow: hidden hidden;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 100vh;
+        max-width: 475px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+
+    }
+    /*Image style*/
+    .pic {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+    .logo{
+        gap: 7px;
+    }
+    .y{
+        height: 30px;
+        margin-left: 14px;
+    }
+    .container .text {
+        align-self: center;
+    }
+    .h1{
+        width: 100%;
+        align-self: center;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .h2{
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px; 
+    }
+
+    form {
+        width: 100%;
+        margin: 0;
+        gap: 0;
+    }
+    .formHeaderC{
+        gap: 0;
+    }
+    .formHeader{
+        font-size: 24px;
+        line-height: 0;
+        gap: 0;
+    }
+    .inputBox {
+        width: 100%;
+    }
+    .textBox{
+        padding: 14px 16px;
+    }
+    .wrapper{
+        width: 180px;
+    }
+    label{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .oneLine{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .a1{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .a2{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .t1{
+        font-size: 16px;
+    }
+}
+/*xs*/
+@media (max-width: 475px){
+    body{
+        justify-content: center;
+        background: url(/pictures/Header.png) center top no-repeat ,
+        url(/pictures/Footer.png) center bottom no-repeat;
+        background-size:  1416px 127px, 1416px 127px;
+        overflow: hidden;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 100vh;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 10px;
+        overflow: scroll;
+
+    }
+    /*Image style*/
+    .pic {
+        min-width: 300px;
+        margin: 0;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+    .logo{
+        align-self: center;
+        width: 100%;
+        gap: 10px;
+    }
+    .l1{
+        width: 100%;
+        display: inline-block;
+        height: 22px;
+    }
+    .l1_pic{
+        width: 70%;
+    }
+    .y{
+        height: 24px;
+        margin-left: 10px;
+    }
+    .container .text {
+        align-self: center;
+    }
+    .h1{
+        width: 100%;
+        align-self: center;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .h2{
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px; 
+    }
+
+    
+    form{
+        align-self: center;
+        max-width: 300px;
+        min-height: 280px;
+        margin-left: 40px;
+        padding: 20px;
+        gap: 0;
+        overflow: scroll;
+    }
+    .formHeaderC{
+        gap: 0;
+    }
+    .formHeader{
+        font-size: 24px;
+        line-height: 0;
+        gap: 0;
+    }
+    .inputBox {
+        min-width: 250px;
+    }
+    .textBox{
+        min-width: 250px;
+        padding: 14px 16px;
+        align-self: center;
+    }
+    .wrapper{
+        min-width: 150px;
+    }
+    .oneLine{
+        min-width: 250px;
+        justify-content: space-evenly;
+    }
+    label{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .oneLine{
+        width: 100%;
+    }
+    .btn{
+        width: 150px;
+        font-size: 18px;
+        line-height: 26px;
+        
+    }
+    .a1{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .a2{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .t1{
+        font-size: 16px;
+    }
+}
